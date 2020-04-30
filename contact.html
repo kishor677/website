@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Air Hostess Training Nepal</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<meta name="description" content="Air hostess training in nepal, Abroad Study, Study in Australia">
+	<meta name="keywords" content="Air hostess training in nepal, Abroad Study, Study in Australia">
+	<meta name="author" content="Kishor">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script src="js/forms.js"></script>
+	<script>		
+   jQuery(window).load(function() {	
+    jQuery('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});	
+   }); 
+					
+	</script>
+
+	<!--[if lt IE 8]>
+  		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+ 	<![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<!--<![endif]-->
+	<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>    
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+  <![endif]-->
+	</head>
+
+	<body>
+<div class="spinner"></div>
+<!--============================== header =================================-->
+<header>
+      <div class="container clearfix">
+    <div class="row">
+          <div class="span12">
+        <div class="navbar navbar_">
+              <div class="container">
+            <h1 class="brand brand_"><a href="index.html"><img alt="" src="img/logo.png"> </a></h1>
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
+            <div class="nav-collapse nav-collapse_  collapse">
+                  <ul class="nav sf-menu">
+                <li class="sub-menu"><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+                <li class="sub-menu"><a href="werepresent.html">Countries we Represent</a>
+                      <ul>
+                    <li><a href="australia.html">Australia </a></li>
+                    <li><a href="#">Canada</a></li>
+                    <li><a href="#">UK</a></li>
+                    <li><a href="#">Japan</a></li>
+					<li><a href="#">USA</a></li>
+					<li><a href="#">New Zealand</a></li>
+                  </ul>
+                    </li>
+                <li><a href="http://nepalairhostess.com/">Air-Hostess Training</a></li>
+               <!-- <li><a href="index-3.html">Blog</a></li> -->
+                <li class="active"><a href="contact.html">Contact</a></li>
+              </ul>
+                </div>
+          </div>
+            </div>
+      </div>
+        </div>
+  </div>
+    </header>
+<div class="bg-content"> 
+      <!--============================== content =================================-->
+      <div id="content"><div class="ic">Global Wings</div>
+    <div class="container">
+          <div class="row">
+        <article class="span8">
+              <h3>Contact us</h3>
+              <div class="inner-1">
+            <form id="contact-form">
+                  <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div>
+                  <fieldset>
+                <div>
+                    <label class="name">
+                    <input type="text" value="Your name">
+                  <br>
+                    <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
+                    </div>
+                  <div>
+                    <label class="phone">
+                    <input type="tel" value="Telephone">
+                    <br>
+                    <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
+                    </div>
+                <div>
+                    <label class="email">
+                    <input type="email" value="Email">
+                    <br>
+                    <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> </label>
+                    </div>
+                <div>
+                    <label class="message">
+                    <textarea>Message</textarea>
+                    <br>
+                    <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label>
+                    </div>
+                <div class="buttons-wrapper"> <a class="btn btn-1" data-type="reset">Clear</a> <a class="btn btn-1" data-type="submit">Send</a></div>
+              </fieldset>
+                </form>
+                <?php
+    } 
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['name'];
+    $phone=$_REQUEST['phone'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+    if (($name=="")||($email=="")||($message==""))
+        {
+        echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+        }
+    else{        
+        $from="From: $name<$email>\r\nReturn-path: $email";
+        $subject="Message sent using your contact form";
+        mail("badu.kishor@gmail.com", $subject, $message, $from);
+        echo "Email sent!";
+        }
+    }  
+?>
+          </div>
+            </article>
+        <article class="span4">
+              <h3>Contact info</h3>
+              <div class="map">
+			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3807213779965!2d85.32280200000002!3d27.705528999999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a81fc684bb%3A0x8a5516c504bef96b!2sGlobal+Wings+(P)+Ltd.!5e0!3m2!1sen!2snp!4v1424368275025" width="600" height="450" frameborder="0" style="border:0"></iframe>
+          </div>
+              <address class="address-1">
+          <strong>Global Wings Pvt. Ltd.<br>
+              Putalisadak<br>
+              Kathmandu</strong>
+          <div class="overflow"> <span>Mobile:</span>+977-98510-62769<br>
+                <span>Hot line:</span>+977-98010-62769<br>
+				<span>Telephone:</span>+977-01-4233864<br>
+                <span>UTL:</span>+977-012298744 <br>
+                <span>E-mail:</span> <a href="#" class="mail-1">info@globalwings.edu.np</a><br>
+                </div>
+          </address>
+            </article>
+      </div>
+        </div>
+  </div>
+    </div>
+
+<!--============================== footer =================================-->
+<footer>
+      <div class="container clearfix">
+    <ul class="list-social pull-right">
+          <li><a class="icon-1" href="#"></a></li>
+       
+          <li><a class="icon-3" href="https://twitter.com/airhostesswings"></a></li>
+          <li><a class="icon-4" href="#"></a></li>
+        </ul>
+    <div class="privacy pull-left">Website designed by: <a href="http://www.globaldg.net/" target="_blank" rel="nofollow">GlobalDG.net</a> </div>
+  </div>
+    </footer>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
